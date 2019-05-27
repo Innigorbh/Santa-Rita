@@ -1,0 +1,288 @@
+/* :root {
+  --color-pink: #f38181;
+  --color-lime: #fce38a;
+  --color-yellow: #eaffd0;
+  --color-green: #95e1d3;
+} */
+body {
+  font-family: 'corbel', sans-serif;
+  font-size: 24px;
+  letter-spacing: 3px;
+  line-height: 1.2;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.titulo {
+  padding-top: 70px;
+  color: #9b0a67;
+  font-family: 'lora', serif;
+  font-size: 36px;
+  text-align: center;
+}
+
+.titulo span {
+  display: block;
+  width: 72px;
+  margin: 20px auto;
+  margin-bottom: 35px;
+  border: 2px solid #69ccbb;
+}
+
+.boton {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 70px;
+}
+
+.boton a {
+  color: #9b0a67;
+  border: 2px solid #9b0a67;
+  display: inline-block;
+  padding: 5px 25px;
+  transition: all 300ms ease-in-out;
+}
+
+.boton a:hover {
+  color: #fff;
+  border: 2px solid #9b0a67;
+  display: inline-block;
+  padding: 5px 25px;
+  background-color: #9b0a67;
+  text-decoration:none;
+}
+
+#main_header {
+  padding-top: 15px;
+  background: url('../img/cabeza.png') no-repeat center;
+   -webkit-mask: url('../img/mascara.svg') top / cover no-repeat;
+  background-size: cover;
+  color: #fff;
+
+
+}
+
+#main_header ul {
+  /*margin: 0 auto;*/
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#main_header ul a {
+  padding: 10px 10px;
+  font-family: 'corbelb', sans-serif;
+  font-size: 18px;
+  display: inline-block;
+
+}
+
+#main_header section {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 30px;
+  padding: 30px;
+}
+
+#main_header section p {
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+
+/*Somos*/
+.somos p {
+  color: #9b0a67;
+  text-align: center;
+}
+
+.somos.container {
+  width: 53%;
+}
+
+/*Productos*/
+.productos .fotos ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.productos .fotos figure {
+  padding-bottom: 75%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.productos .fotos ul li {
+  transition: all 300ms ease-in-out;
+  opacity: 1;
+}
+
+.productos .fotos ul li:hover {
+  opacity: 0.4;
+  filter: brightness(150%);
+}
+
+#lightbox.show {
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  background: rgba(0, 0, 0, 0.5);
+  left: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+#lightbox img {
+  max-height: 90vh;
+}
+
+
+/*Localización*/
+.localizacion .titulo {
+  background-color: #9b0a67;
+  color: #fff;
+  padding-bottom: 10px;
+}
+
+.localizacion .titulo span {
+  border: 2px solid #fff;
+}
+
+/*map*/
+.map {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: #9b0a67;
+}
+
+.map div iframe {
+  width: 100%;
+}
+
+.map div p {
+  padding: 40px;
+  color: #fff;
+  font-family: 'corbel', sans-serif;
+}
+
+/*Footer*/
+#main_footer {
+  background-image: linear-gradient(#9b0a67, #69ccbb);
+  text-align: center;
+  padding: 105px 0;
+}
+
+#main_footer nav {
+  padding: 55px;
+}
+
+#main_footer nav ul {
+  font-family: 'corbelb', sans-serif;
+  font-size: 18px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(3, 130px);
+  justify-content: center;
+}
+
+#main_footer .container {
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: normal;
+  color: #fff;
+  padding-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-between;
+}
+
+#main_footer .container p {
+  text-align: left;
+  grid-column: 1 / 2;
+  grid-row: 1;
+}
+
+#main_footer .container div {
+  text-align: right;
+  grid-column: 2 / 3;
+}
+
+/*media*/
+@media (max-width: 768px) {
+  #main_header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .productos .fotos ul {
+    text-align: center;
+    display: block;
+  }
+
+  .map {
+    display: block;
+  }
+
+  #main_footer nav ul {
+    display: block;
+
+  }
+  #main_footer nav ul li{
+
+    padding: 15px;
+  }
+
+
+  #main_footer .container {
+    display: block;
+
+  }
+
+  #main_footer .container p {
+    text-align: center;
+  }
+
+  #main_footer .container div {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  .somos.container {
+    width: 75%;
+  }
+}
+
+@media (max-width: 360px) {
+
+  #main_header ul {
+    display: block;
+    text-align: center;
+  }
+  body {
+    font-size: 18px;
+  }
+}

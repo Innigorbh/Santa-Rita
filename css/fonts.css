@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'lora';
+  font-display: auto;
+  src: url('../fonts/Lora-Regular.woff2') format("woff2");
+}
+@font-face {
+  font-family: 'corbel';
+  font-display: auto;
+  src: url('../fonts/Corbel.woff2') format("woff2");
+}
+@font-face {
+  font-family: 'corbelb';
+  font-display: auto;
+  src: url('../fonts/Corbel-Bold.woff2') format("woff2");
+}
